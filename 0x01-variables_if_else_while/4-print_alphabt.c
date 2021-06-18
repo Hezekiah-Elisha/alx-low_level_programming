@@ -11,7 +11,7 @@ int main(void)
 
 	for (any = 'a'; any <= 'z'; any++)
 	{
-		if (any != 'q' || any != 'e')
+		if (any != 'q' && any != 'e')
 		{
 			putchar(any);
 		}
