@@ -13,6 +13,9 @@ int main(void)
 	for (any = 'a'; any <= 'z'; any++)
 	{
 		putchar(any);
+	}
+	for (any = 'a'; any <= 'z'; any++)
+	{
 		putchar(toupper(any));
 	}
 	putchar('\n');
