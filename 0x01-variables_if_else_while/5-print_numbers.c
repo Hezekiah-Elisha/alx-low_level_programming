@@ -9,7 +9,7 @@ int main(void)
 {
 	int any;
 
-	for (any = 0; any <= 10; any++)
+	for (any = 0; any < 10; any++)
 	{
 		printf("%d", any);
 	}
