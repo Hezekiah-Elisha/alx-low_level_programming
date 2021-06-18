@@ -11,8 +11,7 @@ int main(void)
 
 	for (any = 0; any <= 10; any++)
 	{
-		printf("%d", any);
+		printf("%d\n", any);
 	}
-	printf('\n');
 	return (0);
 }
