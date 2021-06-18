@@ -1,13 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- * main - entry point of the program
- * Description: Generate random number
- * and check if it's positive or not
- * and prints to std output
- * Return: 0 (success)
+ * more headers goes there
+ * betty style 
+ * doc for function
+ * main goes there 
  */
 int main(void)
 {
