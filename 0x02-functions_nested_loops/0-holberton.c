@@ -1,4 +1,4 @@
-#include <holberton.h>
+#include "holberton.h"
 
 /**
  * main - Entry point
@@ -9,13 +9,17 @@ int main(void)
 {
 	int i = 0;
 
-	char letters[9] = {"H", "o", "l", "b", "e", "r", "t", "o", "n"};
+	char letters[9] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n'};
 
-	while (i < sizeof(letters))
+	int num = sizeof(letters);
+
+	while (i < num)
 	{
 		_putchar(letters[i]);
 		i++;
 	}
+	
+	_putchar('\n');
 
 	return (0);
 }
