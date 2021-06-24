@@ -1,10 +1,9 @@
-#include "holberton.h"
 #include <stdio.h>
 /**
- * fizz_buzz - main thing works here
+ * main - main thing works here
  * Return: none
  */
-void fizz_buzz(void)
+int main(void)
 {
 	int i, j;
 
@@ -27,4 +26,5 @@ void fizz_buzz(void)
 			printf("%d", i);
 		}
 	}
+	return (0);
 }
