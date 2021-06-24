@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  * print_line - a function that draws a straight line
- * @c: a parameter
- * Return: non;
+ * @n: a parameter
+ * Return: none;
  */
 void print_line(int n)
 {
