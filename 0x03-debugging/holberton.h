@@ -4,5 +4,6 @@
 #include <unistd.h>
 
 void positive_of_negative(int i);
+int largest_number(int,int b, int c);
 
 #endif /* HOLBERTON.H */
