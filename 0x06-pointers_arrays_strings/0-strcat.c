@@ -23,12 +23,12 @@ int length(char *i)
 char *_strcat(char *dest, char *src)
 {
 	int i, j;
-	
+
 	i = length(src);
-	for (j = 0; dest[j] != '\0'; j++)
+	for (j = 0; dest[j] != '\0'; ++j)
 	{
 		src[i] = dest[j];
-		i++
+		++i;
 	}
 	dest[i] = '\0';
 
