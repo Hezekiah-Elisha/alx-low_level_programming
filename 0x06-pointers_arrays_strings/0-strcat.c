@@ -15,7 +15,7 @@ int length(char *i)
 	return (s);
 }
 /**
- * strcat - concertinates two strings
+ * _strcat - concertinates two strings
  * @dest: first parameter
  * @src: second parameter
  * Return: returns a char
