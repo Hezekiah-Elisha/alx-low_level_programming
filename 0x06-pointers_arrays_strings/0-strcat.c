@@ -24,10 +24,10 @@ char *_strcat(char *dest, char *src)
 {
 	int i, j;
 
-	i = length(src);
-	for (j = 0; dest[j] != '\0'; ++j)
+	i = length(dest);
+	for (j = 0; src[j] != '\0'; ++j)
 	{
-		src[i] = dest[j];
+		dest[i] = src[j];
 		++i;
 	}
 	dest[i] = '\0';
