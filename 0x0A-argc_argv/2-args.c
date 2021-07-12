@@ -12,9 +12,9 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-		if (i < argc - 1)
+		if (i < argc)
 		{
-			printf("%s\n", argv[i + 1]);
+			printf("%s\n", argv[i]);
 		}
 		else
 		{
