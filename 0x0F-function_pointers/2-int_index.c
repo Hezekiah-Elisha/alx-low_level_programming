@@ -10,7 +10,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
-	if (array && size && cmp > 0)
+	if (array && cmp && size > 0)
 	{
 		for (i = 0; i < size; i++)
 		{
@@ -18,7 +18,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 			{
 				return (i);
 			}
-		}	
+		}
 	}
 	return (-1);
 }
