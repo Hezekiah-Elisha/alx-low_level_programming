@@ -25,9 +25,9 @@ int length(const char *str)
  * @str: String assigned to the node
  * Return: pointer ro the head of the linked list
  */
-list_l *add_node(list_t **head, const char *str)
+list_t *add_node(list_t **head, const char *str)
 {
-	list_l *new_node;
+	list_t *new_node;
 
 	if (head == NULL)
 	{
