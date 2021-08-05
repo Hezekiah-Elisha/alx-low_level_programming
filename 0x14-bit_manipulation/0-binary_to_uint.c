@@ -1,28 +1,45 @@
 #include "main.h"
 /**
- * binary_to_uint - a function that converts a binary number to an unsigned int
- * @b: a parameter
- * Return: return the converted number
+ * _stoi - converts chars to ints
+ * @c: char to convert
+ * Return: converted int
+ */
+unsigned int _stoi(char c)
+{
+	return ((unsigned int) c - '0');
+}
+/**
+ * _strlen - calculates the length of the string
+ * @s: input
+ * Return: length of string
+ */
+unsigned int _strlen(const char *s)
+{
+	unsigned int i;
+
+	for (i = 0; s[i]; i++)
+		;
+	return (i);
+}
+/**
+ * binary_to_uint - converts a string of 1's and 0's to a decimal number
+ * @b: string to convert
+ * Return: unsigned decimal number
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int dec = 0, i = 0, res = 0, len;
+	int i;
+	unsigned int result, tmp, expo;
 
-	if (b == NULL || b[0] == '\0')
+	if (!b)
 		return (0);
-	/*condition to check if it is binary or not*/
-	for (len = 0; b[len] != '\0'; len++)
+	result = tmp = 0;
+	expo = 1;
+	for (i = _strlen(b) - 1; b[i]; i--, expo *= 2)
 	{
-		if (b[len] != '0' && b[len] != '1')
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
+		tmp = _stoi(b[i]);
+		result += tmp * expo;
 	}
-	len = len - 1;
-	/*ehil << (len - i)= mmult 2^2 */
-	while (i <= len)
-	{
-		dec = (b[i] - '0') << (len - i);
-		res = dec + res;
-		i++;
-	}
-	return (res);
-}
+	return (result);
