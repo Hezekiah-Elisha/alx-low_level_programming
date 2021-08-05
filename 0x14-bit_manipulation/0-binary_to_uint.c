@@ -6,29 +6,23 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int w = 0, x, y = 0, z = 0;
+	unsigned int dec = 0, i = 0, res = 0, len;
 
 	if (b == NULL || b[0] == '\0')
-	{
 		return (0);
-	}
-	else
+	/*condition to check if it is binary or not*/
+	for (len = 0; b[len] != '\0'; len++)
 	{
-		for (x = 0; b[x] != '\0'; x++)
-		{
-			if (b[x] != '0' && b[x] != '1')
-			{
-				return (0);
-			}
-		}
-		x--;
-
-		while (w <= x)
-		{
-			y = (b[w] - '0') << (x - w);
-			z = y + z;
-			w++;
-		}
-		return (z);
+		if (b[len] != '0' && b[len] != '1')
+			return (0);
 	}
+	len = len - 1;
+	/*ehil << (len - i)= mmult 2^2 */
+	while (i <= len)
+	{
+		dec = (b[i] - '0') << (len - i);
+		res = dec + res;
+		i++;
+	}
+	return (res);
 }
