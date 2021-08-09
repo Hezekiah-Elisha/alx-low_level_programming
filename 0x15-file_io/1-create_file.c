@@ -1,10 +1,5 @@
 #include "main.h"
-#include <fcntl.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <unistd.h>
-#include <stdlib.h>
-
+#include "holberton.h"
 /**
  * create_file - function that creates a file
  * permission rw-------
