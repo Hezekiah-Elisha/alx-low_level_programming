@@ -1,6 +1,7 @@
 #ifndef FILE_H
 #define FILE_H
 
+#include <elf.h>
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/stat.h>
