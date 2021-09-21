@@ -1,8 +1,8 @@
 #include "main.h"
 #include <unistd.h>
 /**
-* main - Entry point of a program
-*
+* _puts  - Entry point of a program
+* @s: a param
 * Return:  always 0, because is succes
 */
 void _puts(char *s)
