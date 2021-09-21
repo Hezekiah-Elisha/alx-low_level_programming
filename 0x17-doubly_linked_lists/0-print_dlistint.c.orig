@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include "lists.h"
+<<<<<<< HEAD
+
+=======
+>>>>>>> 5c377f00178ecbd361a590bdcd89ff3502cdcbaa
 /**
  * print_dlistint - print all the nodes of a double linked list
  * @h: pointer to the first node of the double linked list
