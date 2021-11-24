@@ -1,9 +1,8 @@
-# make -f 3-Makefile
-CC = gcc
-SRC = main.c school.c
+NAME		=	school
+SRC			=	main.c school.c
+CC			=	gcc
+RM			=	rm -f
 OBJ = $(SRC:%.c=%.o)
-NAME = school
-RM = rm -f
 
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
@@ -14,6 +13,9 @@ clean:
 oclean:
 	$(RM) $(OBJ)
 
-fclean: clean oclean
+fclean:
+	$(RM) *~ $(NAME)
+	$(RM) $(OBJ)
 
-re: fclean all
+re:
+	oclean all
