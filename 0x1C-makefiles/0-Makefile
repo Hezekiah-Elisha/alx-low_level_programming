@@ -1,0 +1,5 @@
+# Make file on the first file
+
+CC = gcc
+
+all: ${CC} main.c school.c -o school
