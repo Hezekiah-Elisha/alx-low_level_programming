@@ -1,3 +1,4 @@
+# test 4
 NAME		=	school
 SRC			=	main.c school.c
 CC			=	gcc
