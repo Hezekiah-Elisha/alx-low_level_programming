@@ -2,4 +2,4 @@
 
 CC = gcc
 
-all: ${CC} main.c school.c -o school
+all: ${CC} main.c holberton.c -o holberton
